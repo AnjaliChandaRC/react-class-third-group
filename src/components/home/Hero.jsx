@@ -19,14 +19,12 @@ const Hero = () => {
         <div key={index}>
           <h2>{obj.heading}</h2>
           <p>{obj.para}</p>
+          {obj.content.map((val, i) => (
+            <div>
+              <p>{ val.list}</p>
+            </div>
+          ))}
         </div>
-        // {
-        //   obj.content.map((val, i) => (
-        //     <div>
-        //       <p>{val.list}</p>
-        //     </div>
-        //   ))
-        // }
       ))}
 
     </div>
